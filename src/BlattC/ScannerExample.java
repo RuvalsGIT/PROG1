@@ -1,3 +1,5 @@
+package BlattC;
+
 public class ScannerExample {
     public static void main (String[] args) {
         System.out.print("Gib bitte Deinen Namen ein: ");

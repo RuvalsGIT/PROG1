@@ -1,4 +1,6 @@
-public class Zinsrechner {
+package BlattC;
+
+public class InterestRate {
     public static void main(String [] args) {
         System.out.println("Wie viel Kapital möchten Sie investieren?");
         double kapital = new java.util.Scanner(System.in).nextInt();
