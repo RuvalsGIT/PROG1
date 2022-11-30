@@ -48,7 +48,8 @@ public class Fraction3 {
                     }
                 }
             }
-
+            numerator = numerator / result;
+            denominator = denominator / result;
         }
 
     }

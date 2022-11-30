@@ -1,7 +1,7 @@
 package BlattF;
 
 public class Fraction3Main {
-    public static void main (String [] args) {
+    public static void main(String[] args) {
         Fraction3 myFraction1 = new Fraction3();
 
         myFraction1.numerator = 2;
@@ -11,6 +11,8 @@ public class Fraction3Main {
         Fraction3 myFraction2 = new Fraction3();
         myFraction2.numerator = 4;
         myFraction2.denominator = 12;
+
+        Fraction3 gekuerzt = new Fraction3();
 
         System.out.println(myFraction1.toDouble());
         System.out.println(myFraction2.toDouble());
@@ -35,7 +37,8 @@ public class Fraction3Main {
             case "MUL":
                 myFraction1.mul(myFraction2);
                 System.out.println("MUL " + myFraction1.numerator + "/" + myFraction1.denominator);
-                myFraction1.reduce();
+                gekuerzt.reduce(myFraction1);
+                System.out.println(myFraction1.numerator + " / " + myFraction1.denominator);
                 System.out.println(myFraction1.toDouble());
                 break;
 
@@ -48,6 +51,5 @@ public class Fraction3Main {
         }
 
     }
-
-    }
+}
 
