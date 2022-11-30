@@ -54,5 +54,6 @@ public class Fraction3 {
             denominator = denominator / result;
         }
 
+
     }
 
