@@ -35,7 +35,7 @@ public class Fraction3Main {
             case "MUL":
                 myFraction1.mul(myFraction2);
                 System.out.println("MUL " + myFraction1.numerator + "/" + myFraction1.denominator);
-                myFraction1.reduce(myFraction1);
+                myFraction1.reduce();
                 System.out.println(myFraction1.toDouble());
                 break;
 
@@ -46,9 +46,7 @@ public class Fraction3Main {
                 break;
 
         }
-        Fraction3 reducer = new Fraction3();
-        reducer.reduce(myFraction1);
-        System.out.println(reducer);
+
     }
 
     }

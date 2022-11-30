@@ -4,7 +4,7 @@ public class Fraction3 {
     int numerator;
     int denominator;
 
-    int reducery;
+    int result;
 
     void add(Fraction3 op) {
         numerator = (numerator * op.denominator) +
@@ -35,7 +35,7 @@ public class Fraction3 {
 
         void reduce(Fraction3 op) {
             if (numerator == 0){
-                reducery = denominator;
+                result = denominator;
             }
             else {
                 while (denominator != 0){
@@ -44,10 +44,12 @@ public class Fraction3 {
                     }
                     else{
                         denominator = denominator - numerator;
-                        reducery = numerator;
+                        result = numerator;
                     }
                 }
             }
+
         }
+
     }
 
