@@ -38,9 +38,12 @@ public class Fraction3Main {
         }
 
         System.out.println(myFraction1.numerator + " | " + myFraction1.denominator);
+
         System.out.println("Gemeinsamer Teiler:" + myFraction1.gtc(myFraction1.numerator, myFraction1.denominator));
+
         myFraction1.reduce(myFraction1);
         System.out.println("Gekürzt: " + myFraction1.numerator + " / " + myFraction1.denominator);
+
         System.out.println(myFraction1.toDouble());
 
     }

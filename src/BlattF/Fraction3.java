@@ -13,9 +13,11 @@ public class Fraction3 {
     }
 
     void sub(Fraction3 op) {
-        numerator = (numerator * op.denominator) -
-                (op.numerator * denominator);
-        denominator = denominator * op.denominator;
+        op.numerator =-op.numerator;
+        add(op);
+//        numerator = (numerator * op.denominator) -
+//                    (op.numerator * denominator);
+//        denominator = denominator * op.denominator;
     }
 
     void mul(Fraction3 op) {
@@ -24,8 +26,10 @@ public class Fraction3 {
     }
 
     void div(Fraction3 op) {
-        numerator = numerator * op.denominator;
-        denominator = denominator * op.numerator;
+        Fraction3 tausch = new Fraction3();
+        tausch.numerator = op.denominator;
+        tausch.denominator = op.numerator;
+        mul(tausch);
     }
 
     double toDouble() {
