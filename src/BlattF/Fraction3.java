@@ -34,8 +34,15 @@ public class Fraction3 {
 
 
         void reduce(Fraction3 op) {
-        int a = numerator;
-        int b = denominator;
+        gtc(numerator, denominator);
+
+
+        numerator = numerator / result;
+        denominator = denominator / result;
+        }
+
+        int gtc(int a, int b){
+
             if (a == 0){
                 result = b;
             }
@@ -50,10 +57,6 @@ public class Fraction3 {
                     }
                 }
             }
-            numerator = numerator / result;
-            denominator = denominator / result;
+            return result;
         }
-
-
     }
-
