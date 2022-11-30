@@ -6,7 +6,7 @@ public class Fraction3Main {
 
         myFraction1.numerator = 2;
         myFraction1.denominator = 3;
-
+        myFraction1.result = 1;
 
         Fraction3 myFraction2 = new Fraction3();
         myFraction2.numerator = 4;
@@ -37,7 +37,8 @@ public class Fraction3Main {
             case "MUL":
                 myFraction1.mul(myFraction2);
                 System.out.println("MUL " + myFraction1.numerator + "/" + myFraction1.denominator);
-                gekuerzt.reduce(myFraction1);
+                myFraction1.reduce(myFraction1);
+                System.out.println(myFraction1.result);
                 System.out.println(myFraction1.numerator + " / " + myFraction1.denominator);
                 System.out.println(myFraction1.toDouble());
                 break;
@@ -47,7 +48,6 @@ public class Fraction3Main {
                 System.out.println("DIV " + myFraction1.numerator + "/" + myFraction1.denominator);
                 System.out.println(myFraction1.toDouble());
                 break;
-
         }
 
     }

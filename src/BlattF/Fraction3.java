@@ -34,17 +34,19 @@ public class Fraction3 {
 
 
         void reduce(Fraction3 op) {
-            if (numerator == 0){
-                result = denominator;
+        int a = numerator;
+        int b = denominator;
+            if (a == 0){
+                result = b;
             }
             else {
-                while (denominator != 0){
-                    if(numerator > denominator) {
-                        numerator = numerator - denominator;
+                while (b != 0){
+                    if(a > b) {
+                        a = a - b;
                     }
                     else{
-                        denominator = denominator - numerator;
-                        result = numerator;
+                        b = b - a;
+                        result = a;
                     }
                 }
             }
